@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Basketball Scoreboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="team-container">
+            <h3>HOME</h3>
+            <div class="counter" id="home-score-container">
+                <span id="home-score">0</span>
+            </div>
+            <div class="button-container">
+                <button class="increase-score home" data-button-value="1" onclick="addScore(this)">+1</button>
+                <button class="increase-score home" data-button-value="2" onclick="addScore(this)">+2</button>
+                <button class="increase-score home" data-button-value="3" onclick="addScore(this)">+3</button>
+            </div>
+        </div>
+        <div class="team-container">
+            <h3>GUEST</h3>
+            <div class="counter" id="guest-score-container">
+                <span id="guest-score">0</span>
+            </div>
+            <div class="button-container">
+                <button class="increase-score guest" data-button-value="1" onclick="addScore(this)">+1</button>
+                <button class="increase-score guest" data-button-value="2" onclick="addScore(this)">+2</button>
+                <button class="increase-score guest" data-button-value="3" onclick="addScore(this)">+3</button>
+            </div>
+        </div>
+    </div>
+    <button id="reset-scores" onclick="resetScore()">Reset</button>
+    <script src="script.js"></script>
+</body>
+</html>
